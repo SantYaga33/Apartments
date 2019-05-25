@@ -1,0 +1,43 @@
+.header 
+	margin: 8px 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	&-logo 
+		width: 155px
+	&-info 
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.info
+	&-contacts 
+		display: flex
+		flex-direction: column
+		text-align: right
+	&-adress
+		font-size: 13px
+	&-phone
+		display: inline-block
+		font-size: 20px
+		color: $text-color
+		text-decoration: none
+		margin-top: 9px
+	&-btn
+		margin-left: 30px
+
+@media (max-width: 767px)
+	.info-contacts
+		display: none
+
+@media (max-width: 575px)
+	.header 
+		padding: 16px 15px
+		margin: 0
+		&-logo 
+			width: 91px
+	.info-btn 
+		padding: 14px 26px
+		font-size: 10px
+ 
