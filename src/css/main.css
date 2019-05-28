@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 321px) {
   .container {
-    max-width: 84%;
+    max-width: 86%;
   }
 }
 .btn {
@@ -70,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  outline: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -144,11 +145,11 @@ h1, h2, h3, h4, h5, h6 {
   .info-btn {
     padding: 14px 26px;
     font-size: 10px;
-  }
-}
-@media (max-width: 321px) {
-  .info-btn {
     margin-left: 0;
+  }
+
+  .main-text__title {
+    font-size: 24px;
   }
 }
 .main {
