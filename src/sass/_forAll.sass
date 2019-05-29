@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6
 	max-width: 1170px
 	margin: 0 auto
 
-@media (max-width: 1199px)
+@media (max-width: 1200px)
 	.container 
 		max-width: 960px
 		width: 95%
@@ -56,4 +56,22 @@ h1, h2, h3, h4, h5, h6
 	cursor: pointer
 	outline: none
 	+bold
+	&:hover
+		background-color: lighten($main-color, 10%)
+		cursor: pointer
 
+.section 
+	padding: 90px 0
+	&-title
+		color: $text-color
+		+bold
+		font-size: 30px
+		line-height: 45px
+
+.input 
+	width: 240px
+	height: 65px
+	border-radius: 10px
+	border: 1px solid $input-line-color
+	padding-left: 33px
+	margin-bottom: 30px

@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 960px;
     width: 95%;
@@ -83,6 +83,30 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+.btn:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+.section-title {
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.input {
+  width: 240px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding-left: 33px;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -228,6 +252,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin-bottom: 30px;
 }
+.info:last-child {
+  margin-bottom: 0;
+}
 .info__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 30px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .main-text {
     width: 69%;
   }
@@ -343,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
   .main-image {
     width: 270px;
     height: 231px;
-    margin-top: 18px;
+    margin-top: 38px;
   }
   .main-text {
     width: 100%;
@@ -362,6 +389,157 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 15px;
   }
 }
+.offer {
+  background: url("../img/offer/offer-bg.jpg") no-repeat;
+  background-position: center right;
+  background-size: cover;
+  position: relative;
+}
+.offer:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+.offer__title {
+  width: 350px;
+  color: #333333;
+  font-size: 24px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+.offer__subtitle {
+  display: block;
+  width: 245px;
+  color: #333333;
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+.offer__input {
+  color: #999999;
+  font-size: 15px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+.offer__input:first-child {
+  margin-right: 10px;
+}
+.offer__btn {
+  width: 100%;
+  font-size: 16px;
+  height: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+.offer__info {
+  width: 226px;
+  font-size: 15px;
+}
+.offer__info-wrap {
+  margin-top: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 24px;
+}
+.offer__tel {
+  width: 224px;
+  font-size: 15px;
+}
+.offer__tel_bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__btn {
+    font-size: 13px;
+  }
+  .offer__info {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+@media (max-width: 415px) {
+  .offer {
+    padding: 52px 0 56px 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    width: 270px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .offer {
+    padding: 52px 0 56px 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 261px;
+    line-height: 21px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    margin-bottom: 27px;
+    line-height: 16px;
+  }
+  .offer__input {
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+  .offer__input:last-child {
+    margin-bottom: 0;
+  }
+  .offer__btn {
+    margin-top: 2px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    padding: 19px 62px 19px 62px;
+    line-height: 18px;
+  }
+  .offer__info {
+    margin-bottom: 7px;
+    width: 226px;
+  }
+  .offer__info-wrap {
+    margin-top: 0;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
