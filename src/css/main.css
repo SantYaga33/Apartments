@@ -5,7 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Museo Sans Bold';
   src: url("../fonts/MuseoSans/MuseoSansCyrl-700.eot");
@@ -13,7 +12,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -98,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  padding: 90px 0;
+  padding: 77px 0 92px 0;
 }
 .section-title {
   color: #333333;
@@ -113,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 65px;
   border-radius: 10px;
   border: 1px solid #dddddd;
-  padding-left: 33px;
+  padding-left: 30px;
   margin-bottom: 30px;
   outline: none;
 }
@@ -263,9 +261,6 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-}
-.info:last-child {
-  margin-bottom: 0;
 }
 .info__text {
   display: -webkit-box;
@@ -426,14 +421,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-size: 24px;
   line-height: 35px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 .offer__subtitle {
   display: block;
   width: 245px;
   color: #333333;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -450,6 +445,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   font-size: 16px;
   height: 70px;
+  margin-bottom: 27px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -458,7 +454,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 .offer__info-wrap {
-  margin-top: 31px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
 }
 .offer__tel {
-  width: 224px;
+  width: 199px;
   font-size: 15px;
 }
 .offer__tel_bold {
