@@ -107,6 +107,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #dddddd;
   padding-left: 33px;
   margin-bottom: 30px;
+  outline: none;
+}
+.input:focus {
+  border: 1px solid #ff9800;
 }
 
 .header {
