@@ -21,6 +21,7 @@ body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   color: #333333;
+  position: relative;
 }
 
 a {
@@ -597,4 +598,13 @@ h1, h2, h3, h4, h5, h6 {
 .offer-block__modal {
   width: 100%;
   padding-right: 0;
+}
+
+.arrowup {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  cursor: pointer;
 }
