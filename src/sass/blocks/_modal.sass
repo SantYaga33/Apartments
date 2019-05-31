@@ -5,12 +5,9 @@
 	width: 100%
 	height: 100%
 	background-color: rgba(#000, 0.5)
-	display: flex
-	opacity: 0
-	transition: all 0.2s ease
-	&_activ 
-		opacity: 1
-		transition: all 0.2s ease
+	display: none
+	&_activ
+		display: flex
 	&__input
 		width: 100%
 	&-dialog 
@@ -23,10 +20,15 @@
 		padding: 40px
 		&__close
 			position: absolute
-			top: 0
-			right: 0
+			top: 20px
+			right: 20px
 			width: 30px
 			height: 30px
+			color: red
+			border: none
+			&:hover 
+				color: #fff
+				background-color: red
 
 @media (max-width: 440px)
 	.modal

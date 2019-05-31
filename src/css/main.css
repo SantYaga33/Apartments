@@ -554,17 +554,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal_activ {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  opacity: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-.modal_activ {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
 }
 .modal__input {
   width: 100%;
@@ -580,10 +575,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-dialog__close {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   width: 30px;
   height: 30px;
+  color: red;
+  border: none;
+}
+.modal-dialog__close:hover {
+  color: #fff;
+  background-color: red;
 }
 
 @media (max-width: 440px) {
