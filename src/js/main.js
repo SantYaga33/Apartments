@@ -9,10 +9,13 @@ let buttonEL      = document.querySelector('#btn'),
 	  modalEL       = document.querySelector('.modal'),
     buttonCloseEL = document.querySelector('#btn-close');
 
-buttonEL.addEventListener('click', function(){
+buttonEL.addEventListener('click', function() {
+	let timer = setTimeout (closeModal, 5000);
+	clearTimeout(timer);
 	modalEL.classList.add('modal_activ');
-	setTimeout(closeModal, 5000);
-
+	setTimeout (closeModal, 5000);
+	
+	
 }); 
 
 let closeModal = function() {
@@ -20,26 +23,26 @@ let closeModal = function() {
 	};
 
 	
-buttonCloseEL.addEventListener('click', function(){
+buttonCloseEL.addEventListener('click', function() {
 	modalEL.classList.remove('modal_activ');
 });    
 
 
-// let type1 = 'Petr',
-// 		type2 = 50,
-// 		type3 = true,
-// 		type4 = null,
-// 		type5 = undefined,
-// 		type6 = {},
-// 		type7 = function(){};
+let type1 = 'Petr',
+		type2 = 50,
+		type3 = true,
+		type4 = null,
+		type5 = undefined,
+		type6 = {},
+		type7 = function(){};
 		
-// console.log('тип данных "Petr" = ' + typeof(type1));
-// console.log('тип данных "50" = ' +typeof(type2));
-// console.log('тип данных "true" = ' +typeof(type3));
-// console.log('тип данных "null" = ' +typeof(type4));
-// console.log('тип данных "undefined" = ' +typeof(type5));
-// console.log('тип данных "{}" = ' +typeof(type6));
-// console.log('тип данных "function(){}" = ' +typeof(type7));
+console.log('тип данных "Petr" = ' + typeof(type1));
+console.log('тип данных "50" = ' +typeof(type2));
+console.log('тип данных "true" = ' +typeof(type3));
+console.log('тип данных "null" = ' +typeof(type4));
+console.log('тип данных "undefined" = ' +typeof(type5));
+console.log('тип данных "{}" = ' +typeof(type6));
+console.log('тип данных "function(){}" = ' +typeof(type7));
 
 
 let width  = 500,

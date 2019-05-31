@@ -8,6 +8,8 @@
 	display: none
 	&_activ 
 		display: flex
+	&__input
+		width: 100%
 	&-dialog 
 		position: relative
 		margin: auto
@@ -22,6 +24,18 @@
 			right: 0
 			width: 30px
 			height: 30px
+
+@media (max-width: 440px)
+	.modal
+		&__title
+			font-size: 16px
+			width: 235px
+		&__subtitle
+			font-size: 14px	
+		&-dialog 
+			padding: 20px	
+		&__btn	
+			padding: 19px 48px 19px 48px
 
 .offer-block__modal
 	width: 100%
