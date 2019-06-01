@@ -5,23 +5,14 @@ $(document).ready(function() {
 	let modalEL         = $('.modal');
 	let buttonCloselEL  = $('#btn-close');
 	let arrowupEl       = $('.arrowup');
-	let upEl       = $('.header');
-
-
 
 buttonEL.on('click', function() {
 	modalEL.addClass('modal_activ');
-	console.log("!!!");
-
 });	 
 
 buttonCloselEL.on('click', function() {
 	modalEL.removeClass('modal_activ');
-
 });	
-
-
-
 
 arrowupEl.fadeOut();
 
@@ -33,7 +24,6 @@ $(window).scroll(function () {
 	}	
 
 });
-
 
 arrowupEl.click(function() {
   $('html, body').animate({ scrollTop: 0 }, 600);
