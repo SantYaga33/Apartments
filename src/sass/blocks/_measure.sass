@@ -1,0 +1,25 @@
+.measure 
+	&__title 
+		margin-bottom: 59px
+		width: 651px
+		text-align: center
+		margin: 0 auto
+	&__subtitle 
+		margin-bottom: 58px
+		text-align: center
+	&__circle-wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+	&__circle
+		position: relative
+		&:not(:last-child) :after
+			content: ''
+			position: absolute	
+			background-image: url('../img/measure/arrow-rigth.png')
+			left: 197px
+			top: -10px
+			width: 72px
+			height: 25px
+	&__info 
+		text-align: center
