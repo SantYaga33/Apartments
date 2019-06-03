@@ -1,0 +1,40 @@
+.portfolio 
+	padding: 85px 0 97px 0
+	background: $section-bg-color url('../img/slider/slider-bg.jpg') repeat-y top left
+	background-size: 50%
+	&__title 
+		padding-bottom: 94px
+	&__arrows
+		max-width: 120px
+		margin: auto
+		margin-top: 68px
+		display: flex
+		justify-content: space-between 
+		cursor: pointer
+.slider 
+	&__image 	
+		margin: auto
+
+@media (max-width: 415px)
+	.portfolio 
+		padding: 38px 0 64px 0
+		&__title 
+			padding-bottom: 0
+			width: auto
+			color: $text-color
+			+bold
+			font-size: 18px
+			margin-bottom: 41px
+			line-height: 21px
+		&__arrows
+			margin-top: 46px	
+	.slider 
+		&__item 
+			// max-width: 246px
+			max-height: 186px	
+
+@media (max-width: 320px)
+	.portfolio
+		padding: 38px 0 60px 0
+		&__title 
+			width: 272px
