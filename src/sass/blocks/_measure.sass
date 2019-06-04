@@ -1,12 +1,13 @@
 .measure 
-	padding-bottom: 98px
+	padding-bottom: 95px
+	padding-top: 92px
 	&__title 
-		margin-bottom: 59px
 		max-width: 654px
 		text-align: center
 		margin: 0 auto
+		margin-bottom: 49px
 	&__subtitle 
-		margin-bottom: 58px
+		margin-bottom: 69px
 		text-align: center
 	&__circle-wrap
 		display: flex
@@ -24,3 +25,46 @@
 			height: 25px
 	&__info 
 		text-align: center
+		font-size: 14px
+		line-height: 20px
+
+@media (max-width: 1200px)
+	.measure 	
+		&__circle
+			width: 33%
+			margin-bottom: 50px
+			&:not(:last-child) :after
+				content: ''
+				display: none
+
+@media (max-width: 991px)
+	.measure 	
+		&__circle
+			width: 50%
+			// &:not(:last-child) :after
+			// 	content: ''
+			// 	display: none
+
+@media (max-width: 415px)
+	.measure
+		padding-top: 19px
+		padding-bottom: 45px 	
+		&__title 
+			margin-bottom: 25px
+			font-size: 18px
+			line-height: normal
+		&__subtitle 
+			margin-bottom: 34px
+			font-size: 14px
+		&__circle
+			width: 100%
+			margin-bottom: 30px
+		&__info
+			font-size: 12px
+			line-height: 14px
+			max-width: 129px
+	.circle
+		&__border
+			margin-bottom: 31px
+	#fix
+		margin-bottom: 22px

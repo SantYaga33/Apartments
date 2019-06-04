@@ -2,14 +2,22 @@
 	padding-top: 0
 	padding-bottom: 43px
 	&__title 
-		width: 907px
-		padding: 100px 0
+		max-width: 912px
+		padding: 90px 0 92px 0
 		color: #000000
 		+reg
 		font-size: 32px
 		line-height: 50px
 		text-align: center
+		margin: 0 auto
 		&-bg 
 			background-color: #ffc000
-			display: flex
-			justify-content: center
+
+
+@media (max-width: 415px)
+	.banner
+		&__title 
+			max-width: 257px
+			font-size: 18px
+			line-height: normal
+			padding: 72px 0 76px 0
