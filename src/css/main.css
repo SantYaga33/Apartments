@@ -669,6 +669,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 415px) {
   .portfolio {
     padding: 38px 0 64px 0;
+    background-image: none;
   }
   .portfolio__title {
     padding-bottom: 0;
@@ -684,8 +685,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 46px;
   }
 
-  .slider__item {
+  .slider {
+    max-width: 246px;
     max-height: 186px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 320px) {
