@@ -925,6 +925,199 @@ h1, h2, h3, h4, h5, h6 {
     padding: 72px 0 76px 0;
   }
 }
+.brif {
+  background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg-photo.jpg");
+  background-position: left center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+  padding: 99px 0 83px 0;
+}
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 68px;
+}
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 212px;
+  text-align: center;
+}
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+  padding-left: 24px;
+  font-size: 15px;
+}
+.brif__btn {
+  width: 100%;
+  max-width: 370px;
+  height: 70px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+.brif__callback {
+  font-size: 15px;
+}
+
+.form__title {
+  margin-bottom: 43px;
+  padding: 0;
+  width: 373px;
+  color: #333333;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  line-height: 33px;
+}
+.form__subtitle {
+  display: block;
+  margin-bottom: 49px;
+  font-size: 16px;
+}
+
+.interview__title {
+  margin-bottom: 45px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  line-height: 33px;
+}
+.interview__subtitle {
+  display: block;
+  margin-bottom: 93px;
+  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+.interview-list {
+  list-style-type: none;
+  counter-reset: section;
+  padding: 0;
+}
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.interview-list__item:before {
+  counter-increment: section;
+  content: counter(section) ". ";
+  font-size: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-right: 32px;
+  display: inline-block;
+  text-align: center;
+  width: 33px;
+  height: 33px;
+  font-size: 14px;
+  line-height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+}
+.interview-list__text {
+  width: 380px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.interview__fix-margin {
+  margin-bottom: 24px;
+}
+.interview__fix-margin1 {
+  margin-bottom: 28px;
+}
+.interview__fix-margin2 {
+  margin-bottom: 42px;
+}
+
+@media (max-width: 415px) {
+  .brif {
+    background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg-photo.jpg");
+    background-position: top center, center bottom;
+    background-size: 200%, cover;
+    background-repeat: repeat-x, no-repeat;
+    padding: 0;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__interview {
+    padding: 46px 0 68px 0;
+  }
+  .brif__form {
+    padding: 0;
+  }
+  .brif__btn {
+    margin-top: 2px;
+    margin-bottom: 31px;
+  }
+  .brif__callback {
+    width: 135px;
+    font-size: 14px;
+    margin-bottom: 34px;
+  }
+
+  .interview__title {
+    width: 217px;
+    font-size: 18px;
+    margin-bottom: 13px;
+    line-height: normal;
+  }
+  .interview__subtitle {
+    width: 173px;
+    font-size: 14px;
+    margin-bottom: 37px;
+  }
+  .interview-list__item:before {
+    margin-right: 8px;
+  }
+  .interview-list__text {
+    width: 231px;
+    font-size: 14px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .interview__fix-margin {
+    margin-bottom: 26px;
+  }
+  .interview__fix-margin1 {
+    margin-bottom: 30px;
+  }
+  .interview__fix-margin2 {
+    margin-bottom: 30px;
+  }
+
+  .form {
+    padding-top: 61px;
+  }
+  .form__title {
+    width: 274px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    margin-bottom: 34px;
+  }
+}
 .modal {
   position: fixed;
   left: 0;
