@@ -92,6 +92,8 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 30px
 	outline: none
 	cursor: pointer
+	&.invalid
+		border: 1px solid red
 	&:focus 		
 		border: 1px solid $input-line-focus
 
@@ -154,4 +156,37 @@ h1, h2, h3, h4, h5, h6
 		font-size: 14px
 		line-height: 20px
 
+// == стили для валидация форм ==
+.success
+	border: 1px solid green
 
+.form 
+	position: relative	
+#username-error 
+	position: absolute 
+	left: 0
+	top: 68px 
+
+#phone-error 
+	position: absolute 
+	left: 254px
+	top: 68px 
+
+#namemodal-error
+	position: absolute 
+	left: 0
+	top: 68px
+
+#phonemodal-error
+	position: absolute 
+	left: 0
+	top: 164px
+
+#usernamebrif-error
+	position: absolute 
+	left: 120px
+	top: 64px
+#phonebrif-error
+	position: absolute 
+	left: 120px
+	top: 148px

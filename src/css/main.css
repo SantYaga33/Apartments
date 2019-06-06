@@ -125,6 +125,9 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   cursor: pointer;
 }
+.input.invalid {
+  border: 1px solid red;
+}
 .input:focus {
   border: 1px solid #ff9800;
 }
@@ -217,6 +220,50 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   font-size: 14px;
   line-height: 20px;
+}
+
+.success {
+  border: 1px solid green;
+}
+
+.form {
+  position: relative;
+}
+
+#username-error {
+  position: absolute;
+  left: 0;
+  top: 68px;
+}
+
+#phone-error {
+  position: absolute;
+  left: 254px;
+  top: 68px;
+}
+
+#namemodal-error {
+  position: absolute;
+  left: 0;
+  top: 68px;
+}
+
+#phonemodal-error {
+  position: absolute;
+  left: 0;
+  top: 164px;
+}
+
+#usernamebrif-error {
+  position: absolute;
+  left: 120px;
+  top: 64px;
+}
+
+#phonebrif-error {
+  position: absolute;
+  left: 120px;
+  top: 148px;
 }
 
 .header {
@@ -570,6 +617,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 .offer__tel_bold {
+  text-decoration: none;
+  color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   display: block;
@@ -1118,6 +1167,81 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 34px;
   }
 }
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 91px 0 127px 215px;
+}
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contacts__title {
+  width: 296px;
+  margin-bottom: 87px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+}
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 29px;
+}
+.contacts-list__item-fixmb {
+  margin-bottom: 28px;
+}
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  padding-top: 6px;
+  margin-right: 19px;
+  color: #ffd200;
+}
+.contacts-list__text {
+  width: 146px;
+  line-height: 26px;
+}
+.contacts-list__text_strong {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+.contacts-list__link {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  text-decoration: none;
+}
+
+.fa-phone {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .modal {
   position: fixed;
   left: 0;
