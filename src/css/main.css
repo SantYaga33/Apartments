@@ -588,6 +588,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .offer__input:first-child {
   margin-right: 10px;
+  padding-left: 24px;
 }
 .offer__btn {
   width: 100%;
@@ -953,8 +954,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__title {
   max-width: 912px;
-  padding: 90px 0 92px 0;
-  color: #000000;
+  padding: 87px 0 92px 0;
+  color: #333333;
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
   font-size: 32px;
