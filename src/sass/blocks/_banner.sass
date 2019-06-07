@@ -12,6 +12,46 @@
 		margin: 0 auto
 		&-bg 
 			background-color: $main-bg-color
+	&-wrap 	
+		display: flex
+		justify-content: space-between
+		margin: 100px 0 43px 0
+	&__card 
+		width: 33.33%
+		max-width: 370px
+		height: 410px
+		position: relative
+		background-color: $bg-banner-groop
+		&-discr
+			position: absolute
+			top: 0
+			left: 0
+			width: 323px
+			padding: 22px 0 0 25px 
+			color: $text-color
+			font-size: 16px
+			line-height: 23px
+			&_strong
+				+bold
+		&-image
+			width: 100%
+			height: 100%
+			&__groop1
+				background: url('../img/banner/banner-groop1/man-gr1.png'), url('../img/banner/banner-groop1/man-body-gr1.png'), url('../img/banner/banner-groop1/bg-gr1.png'), 
+				background-position: bottom left, bottom left, bottom left
+				background-repeat: no-repeat, no-repeat, no-repeat
+				background-size:  100% auto, 100% auto, 100% auto  
+			&__groop2
+				background: url('../img/banner/banner-groop2/man-gr2.png'), url('../img/banner/banner-groop2/man-body-gr2.png'), url('../img/banner/banner-groop2/bg-gr2.png'), 
+				background-position: bottom left, bottom left, bottom left
+				background-repeat: no-repeat, no-repeat, no-repeat
+				background-size:  100% auto, 100% auto, 100% auto  
+			&__groop3
+				background: url('../img/banner/banner-groop3/man-gr3.png'), url('../img/banner/banner-groop3/man-body-gr3.png'), url('../img/banner/banner-groop3/bg-gr3.png'), 
+				background-position: bottom left, bottom left, bottom left
+				background-repeat: no-repeat, no-repeat, no-repeat
+				background-size:  100% auto, 100% auto, 100% auto  
+
 
 
 @media (max-width: 415px)
