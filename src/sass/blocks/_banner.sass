@@ -15,6 +15,7 @@
 	&-wrap 	
 		display: flex
 		justify-content: space-between
+		flex-wrap: wrap
 		margin: 100px 0 43px 0
 	&__card 
 		width: 33.33%
@@ -53,11 +54,32 @@
 				background-size:  100% auto, 100% auto, 100% auto  
 
 
-
+@media (max-width: 1200px)
+@media (max-width: 768px)
 @media (max-width: 415px)
 	.banner
+		padding-bottom: 0
 		&__title 
 			max-width: 257px
 			font-size: 18px
 			line-height: normal
 			padding: 72px 0 76px 0
+		&-wrap 
+			flex-direction: column
+			margin-top: 59px 
+		&__card 
+			width: 100%
+			max-width: 277px
+			max-height: 300px
+			margin-bottom: 34px
+			&:last-child 
+				margin-bottom: 0
+			&-discr 
+				width: 241px
+				font-size: 12px
+				line-height: 16.83px
+				padding: 14px 0 0 22px
+				&-fixone
+					padding: 12px 0 0 23px
+				&-fixtwo
+					padding: 12px 0 0 18px

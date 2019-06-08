@@ -973,6 +973,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 100px 0 43px 0;
 }
 .banner__card {
@@ -1020,11 +1022,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 415px) {
+  .banner {
+    padding-bottom: 0;
+  }
   .banner__title {
     max-width: 257px;
     font-size: 18px;
     line-height: normal;
     padding: 72px 0 76px 0;
+  }
+  .banner-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 59px;
+  }
+  .banner__card {
+    width: 100%;
+    max-width: 277px;
+    max-height: 300px;
+    margin-bottom: 34px;
+  }
+  .banner__card:last-child {
+    margin-bottom: 0;
+  }
+  .banner__card-discr {
+    width: 241px;
+    font-size: 12px;
+    line-height: 16.83px;
+    padding: 14px 0 0 22px;
+  }
+  .banner__card-discr-fixone {
+    padding: 12px 0 0 23px;
+  }
+  .banner__card-discr-fixtwo {
+    padding: 12px 0 0 18px;
   }
 }
 .guarantee {
@@ -1090,10 +1123,88 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   text-align: center;
 }
-.guarantee__item-text .fix-margin {
-  margin-right: 2px;
-}
 
+@media (max-width: 415px) {
+  .guarantee {
+    padding-top: 31px;
+    padding-bottom: 228px;
+  }
+  .guarantee__title {
+    width: 244px;
+    font-size: 18px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    line-height: 21px;
+    margin-bottom: 49px;
+  }
+  .guarantee-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .guarantee__item {
+    width: 100%;
+    margin: 0;
+  }
+  .guarantee__item-text {
+    font-size: 14px;
+    line-height: 15px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+  }
+  .guarantee__item-image {
+    margin: 0;
+  }
+  .guarantee__item-order-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 31px;
+  }
+  .guarantee__item-order-2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-bottom: 28px;
+  }
+  .guarantee__item-order-3 {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    margin-bottom: 31px;
+  }
+  .guarantee__item-order-4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 44px;
+    line-height: 16px;
+    width: 100%;
+    max-width: 220px;
+  }
+  .guarantee__item-order-5 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-bottom: 44px;
+    line-height: 17px;
+    width: 100%;
+    max-width: 236px;
+  }
+  .guarantee__item-order-6 {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin-bottom: 31px;
+    line-height: 16px;
+    width: 100%;
+    max-width: 225px;
+  }
+}
 .brif {
   background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg-photo.jpg");
   background-position: left center, right center;
