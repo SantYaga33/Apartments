@@ -1238,11 +1238,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .brif__interview {
+  padding: 98px 0 83px 0;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-right: 68px;
 }
 .brif__form {
+  padding: 98px 0 83px 0;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding-left: 212px;
@@ -1265,10 +1267,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .brif__callback {
   font-size: 15px;
+  display: block;
 }
 
 .form__title {
-  padding: 98px 0 83px 0;
+  margin: 0 auto;
   margin-bottom: 43px;
   width: 373px;
   color: #333333;
@@ -1284,7 +1287,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .interview__title {
-  padding: 98px 0 83px 0;
   margin-bottom: 44px;
   font-size: 22px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -1312,8 +1314,8 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 .interview-list__item:before {
-  counter-increment: count;
-  content: counter(count) ". ";
+  counter-increment: section;
+  content: counter(section) ". ";
   font-size: 18px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1350,6 +1352,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 33px;
 }
 
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 0;
+  }
+}
 @media (max-width: 415px) {
   .brif {
     background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg-photo.jpg");
