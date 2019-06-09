@@ -639,6 +639,20 @@ h1, h2, h3, h4, h5, h6 {
   .offer__info {
     margin-bottom: 20px;
   }
+
+  #username-error {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    font-size: 10px;
+  }
+
+  #phone-error {
+    position: absolute;
+    left: 0;
+    top: 139px;
+    font-size: 10px;
+  }
 }
 @media (max-width: 768px) {
   .offer {
@@ -1375,6 +1389,18 @@ h1, h2, h3, h4, h5, h6 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  #usernamebrif-error {
+    position: absolute;
+    left: 205px;
+    top: 64px;
+  }
+
+  #phonebrif-error {
+    position: absolute;
+    left: 205px;
+    top: 148px;
+  }
 }
 @media (max-width: 580px) {
   .interview-list__text {
@@ -1456,6 +1482,60 @@ h1, h2, h3, h4, h5, h6 {
   }
   .interview__fix-margin2 {
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  #usernamebrif-error {
+    left: 150px;
+  }
+
+  #phonebrif-error {
+    left: 150px;
+  }
+}
+@media (max-width: 768px) {
+  #usernamebrif-error {
+    left: 290px;
+  }
+
+  #phonebrif-error {
+    left: 290px;
+  }
+}
+@media (max-width: 415px) {
+  #usernamebrif-error {
+    position: absolute;
+    left: 132px;
+    top: 64px;
+    font-size: 10px;
+  }
+
+  #phonebrif-error {
+    position: absolute;
+    left: 132px;
+    top: 138px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  #usernamebrif-error {
+    left: 118px;
+  }
+
+  #phonebrif-error {
+    left: 118px;
+    top: 138px;
+  }
+}
+@media (max-width: 320px) {
+  #usernamebrif-error {
+    left: 100px;
+    top: 64px;
+  }
+
+  #phonebrif-error {
+    left: 100px;
+    top: 138px;
   }
 }
 .footer {
@@ -1624,6 +1704,26 @@ h1, h2, h3, h4, h5, h6 {
   background-color: red;
 }
 
+.arrowup {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  #namemodal-error {
+    top: 65px;
+    font-size: 10px;
+  }
+
+  #phonemodal-error {
+    top: 139px;
+    font-size: 10px;
+  }
+}
 @media (max-width: 440px) {
   .modal__title {
     font-size: 16px;
@@ -1644,11 +1744,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0;
 }
 
-.arrowup {
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  right: 30px;
-  bottom: 40px;
-  cursor: pointer;
+@media (max-width: 320px) {
+  .modal-dialog__close {
+    top: 10px;
+    right: 10px;
+  }
 }

@@ -33,6 +33,26 @@
 				color: #fff
 				background-color: red
 
+
+
+// == стили для стрелки UP ==
+.arrowup 
+	width: 40px
+	height: 40px
+	position: fixed
+	right: 30px
+	bottom: 40px
+	cursor: pointer
+
+
+@media (max-width: 1200px)
+	#namemodal-error 
+		top: 65px
+		font-size: 10px
+	#phonemodal-error 
+		top: 139px
+		font-size: 10px
+
 @media (max-width: 440px)
 	.modal
 		&__title
@@ -49,12 +69,10 @@
 	width: 100%
 	padding-right: 0
 
-// == стили для стрелки UP ==
-.arrowup 
-	width: 40px
-	height: 40px
-	position: fixed
-	right: 30px
-	bottom: 40px
-	cursor: pointer
+@media (max-width: 320px)
+	.modal-dialog__close 
+		top: 10px
+		right: 10px
+
+
 	
