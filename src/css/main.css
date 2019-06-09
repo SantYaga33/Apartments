@@ -1379,7 +1379,7 @@ h1, h2, h3, h4, h5, h6 {
   .brif {
     background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg-photo.jpg");
     background-position: top center, center bottom;
-    background-size: 50%, cover;
+    background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
     padding: 0;
   }
@@ -1415,10 +1415,10 @@ h1, h2, h3, h4, h5, h6 {
             flex-direction: column;
   }
   .brif__interview {
-    padding: 43px 0 68px 0;
+    padding: 43px 0 78px 0;
   }
   .brif__form {
-    padding: 38px 0 28px 0;
+    padding: 28px 0 28px 0;
   }
   .brif__form-title {
     width: 277px;
@@ -1460,6 +1460,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .interview-list__item:before {
     margin-right: 5px;
+  }
+  .interview-list__item:before:last-child {
+    padding-bottom: 10px;
   }
   .interview-list__text {
     width: 242px;

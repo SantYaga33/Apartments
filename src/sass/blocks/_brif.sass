@@ -99,21 +99,11 @@
 		&__form 
 			padding-left: 0
 
-
-// @media (min-width: 992px)
-// 	.brif		
-// 		background-image: url('../img/brif/brif-bg.jpg'), url('../img/brif/brif-bg-photo.jpg')
-// 		background-position: left center, right center
-// 		background-size: 50%, contain
-// 		background-repeat: repeat-y, no-repeat
-// 		padding: 0
-
-
 @media (max-width: 991px)
 	.brif	
 		background-image: url('../img/brif/brif-bg.jpg'), url('../img/brif/brif-bg-photo.jpg')
 		background-position: top center, center bottom
-		background-size: 50%, cover
+		background-size: 100% 50%, cover
 		background-repeat: repeat-x, no-repeat
 		padding: 0 
 		&-block 
@@ -139,9 +129,9 @@
 		&-block 
 			flex-direction: column
 		&__interview 
-			padding: 43px 0 68px 0
+			padding: 43px 0 78px 0
 		&__form 
-			padding: 38px 0 28px 0
+			padding: 28px 0 28px 0
 			&-title
 				width: 277px
 				font-size: 18px
@@ -177,6 +167,8 @@
 		&-list 
 			&__item:before 
 				margin-right: 5px
+				&:last-child
+					padding-bottom: 10px
 			&__text
 				width: 242px
 				font-size: 14px
