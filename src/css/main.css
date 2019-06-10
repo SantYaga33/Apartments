@@ -1555,7 +1555,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding: 91px 0 127px 215px;
+  padding: 91px 0 93px 215px;
 }
 .contacts-block {
   display: -webkit-box;
