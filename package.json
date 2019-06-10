@@ -1,0 +1,27 @@
+{
+  "name": "Apartments",
+  "version": "1.0.0",
+  "description": "Сайт по ремонту квартир",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantYaga33/Apartments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantYaga33/Apartments/issues"
+  },
+  "homepage": "https://github.com/SantYaga33/Apartments#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-html-minify": "0.0.14",
+    "gulp-tinypng-compress": "^1.2.5"
+  },
+  "dependencies": {}
+}
