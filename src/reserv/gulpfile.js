@@ -1,12 +1,12 @@
 
 const gulp = require('gulp');
 const concat = require('gulp-concat');
+const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const htmlminify = require("gulp-html-minify");
 var   tinyPNG = require("gulp-tinypng-compress");
 const del = require('del');
-const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 
 //Порядок подключения css файлов
@@ -29,6 +29,11 @@ function styles() {
    return gulp.src(cssFiles)
    //Объединение файлов в один
    .pipe(concat('main.css'))
+   // Добавить префиксы
+   // .pipe(autoprefixer({
+   //    browsers: ['last 2 versions'],
+   //    cascade: false
+   // }))
    //Минификация CSS
    .pipe(cleanCSS({
       level: 2
@@ -37,43 +42,6 @@ function styles() {
    .pipe(gulp.dest('dist/css'))
    .pipe(browserSync.stream());
 }
-
-
-// доп задание по 24 уроку - временная секция
-// ==========================================
-function minjs() {
-   //Шаблон для поиска файлов JS
-   //Все файлы по шаблону './src/js/**/*.js'
-   return gulp.src(['./src/js/*.js' ,'!./**/*.min.js'])
-   //Минификация JS
-   .pipe(uglify({
-      toplevel: true
-   }))
-  // добавляем префикс .min 
-    .pipe(rename({
-      suffix: '.min'
-    })) 
-
-   //Выходная папка для скриптов
-   .pipe(gulp.dest('dist/js'))
-}
- 
-function movejs() {
-   //Шаблон для поиска файлов JS
-   //Все файлы по шаблону './src/js/**/*.min.js'
-   return gulp.src('./src/js/*.min.js')
-   // переносим файлы формата .min.js
-   .pipe(gulp.dest('dist/js'))
- }
-
-//Таск вызывающий функцию minjs
-gulp.task('minjs', minjs);
-//Таск вызывающий функцию movejs
-gulp.task('movejs', movejs);
-//Таск вызывающий выполняющий minjs и movejs
-gulp.task('removejs', gulp.series('minjs','movejs'));
-
-// ====================================================
 
 
 //Таск на скрипты JS
