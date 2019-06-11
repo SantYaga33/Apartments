@@ -124,7 +124,7 @@ function clean() {
 function watch() {
    browserSync.init({
       server: {
-          baseDir: "dist/",
+          baseDir: "src/",
           index: "index.html"
 
       }
