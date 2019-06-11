@@ -6,7 +6,7 @@ url('../fonts/MuseoSans/MuseoSansCyrl-300.woff') format('woff'),
 url('../fonts/MuseoSans/MuseoSansCyrl-300.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
-font-display: auto;
+font-display: optional;
 }
 
 @font-face {
@@ -17,7 +17,7 @@ url('../fonts/MuseoSans/MuseoSansCyrl-700.woff') format('woff'),
 url('../fonts/MuseoSans/MuseoSansCyrl-700.ttf') format('truetype');
 font-weight: normal;
 font-style: normal;
-font-display: auto;
+font-display: optional;
 }
 
 @mixin reg {

@@ -76,22 +76,37 @@ $('#modal-form').validate({
   }
 });
 
+// подгрузка карты яндекс
+YaMapsShown = false; 
 
+ $(window).scroll(function() {
+    if (!YaMapsShown){
+     if($(window).scrollTop() + $(window).height() > $(document).height() - 600) {      
+      showYaMaps();
+      YaMapsShown = true;
+     }
+    }
+ });
+ 
+
+function showYaMaps(){
+ var script   = document.createElement("script");
+ script.type  = "text/javascript";
+ script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2f6f5688299a6c7654150ce4b97e58be207fc31e40e14b651063ded431d324ee&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false";
+ document.getElementById("map").appendChild(script);
+};
 
 // == валидация номера телефона ==
-
 $('.phone').mask('8 (999) 999-99-99');
-
-
-
 
 
 // == модальное окно ==
 
-	let buttonEL        = $('#btn'),
-	    modalEL         = $('.modal'),
-	    buttonCloselEL  = $('#btn-close'),
-	    arrowupEl       = $('.arrowup');
+var buttonEL        = $('#btn'),
+    modalEL         = $('.modal'),
+    buttonCloselEL  = $('#btn-close'),
+    arrowupEl       = $('.arrowup');
+
 
 buttonEL.on('click', function() {
 	modalEL.addClass('modal_activ');
@@ -112,13 +127,13 @@ $(window).scroll(function () {
 
 });
 
+// стрелка - скролл в топ сайта
 arrowupEl.click(function() {
   $('html, body').animate({ scrollTop: 0 }, 600);
   return false;
  });
 
 });
-
 
 
 // == слайдер ==
