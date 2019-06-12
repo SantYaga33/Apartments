@@ -85,6 +85,8 @@
 			font-size: 18px
 			line-height: 21px
 			+bold	
+			&-fix-wide
+				padding-top: 12px
 			&-padding 
 				padding-top: 13px
 	&__fix-margin
@@ -98,6 +100,12 @@
 	.brif	
 		&__form 
 			padding-left: 0
+
+@media (max-width: 1024px)
+	#usernamebrif-error
+		left: 150px
+	#phonebrif-error 
+		left: 150px					
 
 @media (max-width: 991px)
 	.brif	
@@ -118,6 +126,12 @@
 		position: absolute
 		left: 205px
 		top: 148px
+
+@media (max-width: 768px)
+	#usernamebrif-error
+		left: 290px
+	#phonebrif-error 
+		left: 290px		
 
 @media (max-width: 580px)			
 		.interview	
@@ -184,21 +198,7 @@
 			margin-bottom: 12px	
 		&__fix-margin2
 			margin-bottom: 20px
-
-
-@media (max-width: 1024px)
-	#usernamebrif-error
-		left: 150px
-	#phonebrif-error 
-		left: 150px			
-
-@media (max-width: 768px)
-	#usernamebrif-error
-		left: 290px
-	#phonebrif-error 
-		left: 290px
-
-@media (max-width: 415px)			
+		
 	#usernamebrif-error 
 		position: absolute
 		left: 132px

@@ -10,12 +10,6 @@
 		text-align: center
 	&__card
 		margin-bottom: 27px
-		&:hover
-			box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
-			transition: 0.2s
-			.price__card-image:after
-				opacity: 1
-				transition: 0.2s
 		&-image
 			position: relative
 			&:after
@@ -28,22 +22,34 @@
 				background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
 				opacity: 0
 				transition: 0.2s
-				&:hover 
-					opacity: 1
-					transition: 0.2s
 		&-wrap 	
 			display: flex 
 			flex-wrap: wrap 
 			justify-content: space-between
-.card__info-link
-	&:hover
-		&:after
-			height: 12px 
 	
 @media (max-width: 1200px)
 	.price 	
 		&__card-wrap 	
 			justify-content: space-around	
+
+@media (min-width: 992px)
+	.price			
+		&__card
+			&:hover
+				box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+				transition: 0.2s
+				.price__card-image:after
+					opacity: 1
+					transition: 0.2s
+		&-image
+			&:after
+				&:hover 
+					opacity: 1
+					transition: 0.2s			
+	.card__info-link
+		&:hover
+			&:after
+				height: 12px 
 
 @media (max-width: 415px)
 	.price 
