@@ -111,7 +111,7 @@ function tiny(done) {
 // Минимизируем HTML
 function minifyHTML() {
   return gulp.src('./src/index.html')
- 		// .pipe(htmlminify())
+ 	  .pipe(htmlminify())
     .pipe(gulp.dest('dist/'))
 
 }
