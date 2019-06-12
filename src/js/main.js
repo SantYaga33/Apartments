@@ -96,12 +96,27 @@ function showYaMaps(){
  document.getElementById("map").appendChild(script);
 };
 
+
+
 // == валидация номера телефона ==
-$('.phone').mask('8 (999) 999-99-99');
+// $('.phone').mask('8 (999) 999-99-99');
+
+// // модальное окно благодарности
+// var modalThanksEL = $('.modal-thanks '),
+//   buttonThCloselEL  = $('.modal-thanks__close');
+
+// $('.form').on('submit', function (event) {
+//   event.preventDefault ();
+//   event.stopImmediatePropagation ();
+//     modalThanksEL.addClass('modal-thanks_activ');
+// });  
+
+// buttonThCloselEL.on('click', function() {
+//   modalThanksEL.removeClass('modal-thanks_activ');
+// }); 
 
 
 // == модальное окно ==
-
 var buttonEL        = $('#btn'),
     modalEL         = $('.modal'),
     buttonCloselEL  = $('#btn-close'),
