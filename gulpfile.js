@@ -50,12 +50,13 @@ function minjs() {
       toplevel: true
    }))
   // добавляем префикс .min 
-    .pipe(rename({
-      suffix: '.min'
-    })) 
+    // .pipe(rename({
+    //   suffix: '.min'
+    // })) 
 
    //Выходная папка для скриптов
    .pipe(gulp.dest('dist/js'))
+   .pipe(browserSync.stream());
 }
  
 function movejs() {
@@ -110,7 +111,7 @@ function tiny(done) {
 // Минимизируем HTML
 function minifyHTML() {
   return gulp.src('./src/index.html')
- 		.pipe(htmlminify())
+ 		// .pipe(htmlminify())
     .pipe(gulp.dest('dist/'))
 
 }
@@ -152,7 +153,7 @@ gulp.task('del', clean);
 //Таск для отслеживания изменений
 gulp.task('watch', watch);
 //Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,scripts,movefonts,minifyHTML,tiny)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles,minjs,movejs,movefonts,minifyHTML,tiny)));
 //Таск запускает таск build и watch последовательно
 gulp.task('dev', gulp.series('build','watch'));
 

@@ -1976,9 +1976,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
-.interview-list__text-fix-wide {
-  padding-top: 12px;
-}
 .interview-list__text-padding {
   padding-top: 13px;
 }
@@ -1990,6 +1987,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .interview__fix-margin2 {
   margin-bottom: 33px;
+}
+
+.interview-list__text-fix-wide {
+  padding-top: 12px;
 }
 
 @media (max-width: 1200px) {
