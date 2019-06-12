@@ -3,6 +3,7 @@ new WOW().init();
 $(document).ready(function() {
 	
 // == валидация формы ==
+
 $('#brif-form').validate({
   errorClass: "invalid",
   validClass: "success",
@@ -77,6 +78,7 @@ $('#modal-form').validate({
 });
 
 // подгрузка карты яндекс
+
 YaMapsShown = false; 
 
  $(window).scroll(function() {
@@ -99,7 +101,8 @@ function showYaMaps(){
 
 
 // == валидация номера телефона ==
-// $('.phone').mask('8 (999) 999-99-99');
+
+$('.phone').mask('8 (999) 999-99-99');
 
 // // модальное окно благодарности
 // var modalThanksEL = $('.modal-thanks '),
@@ -117,6 +120,7 @@ function showYaMaps(){
 
 
 // == модальное окно ==
+
 var buttonEL        = $('#btn'),
     modalEL         = $('.modal'),
     buttonCloselEL  = $('#btn-close'),
