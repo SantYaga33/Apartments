@@ -26,6 +26,7 @@
 			display: flex 
 			flex-wrap: wrap 
 			justify-content: space-between
+		
 	
 @media (max-width: 1200px)
 	.price 	
@@ -33,19 +34,43 @@
 			justify-content: space-around	
 
 @media (min-width: 992px)
-	.price			
+	.price 
+		padding: 90px 0 32px 0
+		&__title 
+			max-width: 516px
+			text-align: center
+			margin: 0 auto
+			margin-bottom: 47px
+		&__subtitle 
+			margin-bottom: 59px
+			text-align: center
 		&__card
+			margin-bottom: 27px
 			&:hover
 				box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
 				transition: 0.2s
 				.price__card-image:after
 					opacity: 1
 					transition: 0.2s
-		&-image
-			&:after
-				&:hover 
-					opacity: 1
-					transition: 0.2s			
+			&-image
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
+					opacity: 0
+					transition: 0.2s
+					&:hover 
+						opacity: 1
+						transition: 0.2s
+			&-wrap 	
+				display: flex 
+				flex-wrap: wrap 
+				justify-content: space-between
 	.card__info-link
 		&:hover
 			&:after

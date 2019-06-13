@@ -62,7 +62,7 @@
 			<div class="offer-block">
 				<h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
 				<span class="offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-				<form action="#" method="POST" id="offer-form" class="form form-offer" onsubmit="ym( 51722692, 'reachGoal', 'form_design'); return true;">
+				<form action="#" method="POST" id="offer-form" class="form form-offer  ajax-form" onsubmit="ym( 51722692, 'reachGoal', 'form_design'); return true;">
 					<input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
 					<input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
 					<button type="submit" class="btn offer__btn" value="submit">Получить бесплатный дизайн-проект</button>
@@ -279,7 +279,7 @@
 				<div class="brif__form">
 					<h3 class="form__title brif__form-title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
 					<span class="form__subtitle brif__form-subtitle">Для этого заполните форму ниже</span>
-					<form action="#" class="form" id="brif-form">
+					<form action="#" class="form" id="brif-form ajax-form">
 						<input type="text" name="usernamebrif"  class="input brif__input" placeholder="Ваше имя">
 						<input type="tel" name="phonebrif" class="input brif__input phone" placeholder="Ваш телефон">
 						<button type="submit" class="btn brif__btn">Рассчитать стоимость</button>
@@ -323,7 +323,7 @@
 			<div class="offer-block offer-block__modal">
 					<h2 class="section-title offer__title modal__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
 					<span class="offer__subtitle modal__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-					<form action="#" id="modal-form" class="form form-offer">
+					<form action="#" id="modal-form" class="form form-offer ajax-form">
 						<input type="text" name="namemodal" class="input offer__input modal__input" placeholder="Ваше имя">
 						<input type="tel" name="phonemodal" class="input offer__input modal__input phone" placeholder="Ваш телефон">
 						<button type="submit" class="btn offer__btn modal__btn">Получить бесплатный дизайн-проект</button>
@@ -379,6 +379,7 @@
 <script src="js/wow.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/ajax.js"></script>
 <script src="js/main.js"></script>
 
 </body>

@@ -1439,6 +1439,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (min-width: 992px) {
+  .price {
+    padding: 90px 0 32px 0;
+  }
+  .price__title {
+    max-width: 516px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+  .price__subtitle {
+    margin-bottom: 59px;
+    text-align: center;
+  }
+  .price__card {
+    margin-bottom: 27px;
+  }
   .price__card:hover {
     -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
             box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
@@ -1450,10 +1466,36 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  .price-image:after:hover {
+  .price__card-image {
+    position: relative;
+  }
+  .price__card-image:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+    background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .price__card-image:after:hover {
     opacity: 1;
     -webkit-transition: 0.2s;
     transition: 0.2s;
+  }
+  .price__card-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .card__info-link:hover:after {

@@ -19,6 +19,7 @@ const jsFiles = [
    './src/js/wow.min.js',
    './src/js/jquery.validate.min.js',
    './src/js/jquery.maskedinput.min.js',
+   './src/js/ajax.js',
    './src/js/main.js'
 ]
 
@@ -50,9 +51,9 @@ function minjs() {
       toplevel: true
    }))
   // добавляем префикс .min 
-    // .pipe(rename({
-    //   suffix: '.min'
-    // })) 
+    .pipe(rename({
+      suffix: '.min'
+    })) 
 
    //Выходная папка для скриптов
    .pipe(gulp.dest('dist/js'))
@@ -62,7 +63,7 @@ function minjs() {
 function movejs() {
    //Шаблон для поиска файлов JS
    //Все файлы по шаблону './src/js/**/*.min.js'
-   return gulp.src('./src/js/*.min.js')
+   return gulp.src('./src/js/*.js')
    // переносим файлы формата .min.js
    .pipe(gulp.dest('dist/js'))
  }
@@ -153,7 +154,7 @@ gulp.task('del', clean);
 //Таск для отслеживания изменений
 gulp.task('watch', watch);
 //Таск для удаления файлов в папке build и запуск styles и scripts
-gulp.task('build', gulp.series(clean, gulp.parallel(styles,minjs,movejs,movefonts,minifyHTML,tiny)));
+gulp.task('build', gulp.series(clean, gulp.parallel(styles,movejs,movefonts,minifyHTML,tiny)));
 //Таск запускает таск build и watch последовательно
 gulp.task('dev', gulp.series('build','watch'));
 
