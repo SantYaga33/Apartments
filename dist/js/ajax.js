@@ -32,6 +32,11 @@ var modalThanksEL     = $('.modal-thanks '),
                 success: function(data){
                     console.log(data);
                      // Это событие после успешной отправки формы
+                     form.find('input, textarea').each( function() {
+                        if ($(this).val() !== '') {
+                            $(this).val() = '';
+                           }
+                        })    
                      modalThanksEL.addClass('modal-thanks_activ');
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
