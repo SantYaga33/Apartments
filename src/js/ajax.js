@@ -3,6 +3,9 @@ $(document).ready(function () {
     *  .ajax-form = это класс для тега form
     * */
 
+var modalThanksEL     = $('.modal-thanks '),
+    buttonThCloselEL  = $('.modal-thanks__close');
+
     $(".ajax-form").on('submit', function(){
         // Наши переменные
         var form = $(this);
@@ -10,7 +13,7 @@ $(document).ready(function () {
         // Небольшая проверка на пустоту
         form.find('input, textarea').each( function(){
             if ($(this).val() === '') {
-                alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!');
+                console.log('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!');
                 error = true;
             }
         });
@@ -28,7 +31,8 @@ $(document).ready(function () {
                 },
                 success: function(data){
                     console.log(data);
-                    // Тут пишем что нужно сделать если отправка прошла
+                     // Это событие после успешной отправки формы
+                     modalThanksEL.addClass('modal-thanks_activ');
                 },
                 error: function (xhr, ajaxOptions, thrownError) {
                     // Выводим ошибки если есть
@@ -39,4 +43,9 @@ $(document).ready(function () {
         }
         return false; // вырубaeм стaндaртную oтпрaвку фoрмы
     });
+
+    buttonThCloselEL.on('click', function() {
+    modalThanksEL.removeClass('modal-thanks_activ');
+
+    }); 
 });
